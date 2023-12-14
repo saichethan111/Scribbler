@@ -1,0 +1,148 @@
+body {
+    background-color: #ffeedd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    font-family: 'Montez', cursive;
+    color: rgb(17, 17, 173);
+    font-size: 30px;
+    margin: 10px;
+}
+.sub-heading{
+    font-family: 'Ubuntu Mono', cursive;
+    color: black;
+    font-size: 15px;
+}
+.access-btns{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+}
+.access-btn{
+    padding: 10px 20px 10px 20px;
+    background-color: blue;
+    color: white;
+    border: #fff;
+    border-style: outset;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.post-card {
+    width: 45%; /* Adjust the width as needed */
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-direction: row; /* Set to row to display content and username horizontally */
+    justify-content: space-between;
+}
+
+.post-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.delete-icon {
+    color: #222121; /* Red color */
+    cursor: pointer;
+}
+
+.ellipsis-icon {
+    color: #222121; /* Blue color */
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-yes-btn,
+.modal-no-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-yes-btn {
+    background: #4caf50; /* Green color */
+    color: #fff;
+}
+
+.modal-no-btn {
+    background: #ccc;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Different background color for the username section */
+    padding: 10px;
+}
+
+.username {
+    font-weight: bold;
+    margin: 0; /* Reset margin to remove default spacing */
+}
+
+.post-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #e0e0e0; /* Different background color for the content section */
+    padding: 15px;
+}
+
+.content-text {
+    margin: 0; /* Reset margin to remove default spacing */
+}
+
+.post-title {
+    margin-bottom: 10px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
