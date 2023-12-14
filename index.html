@@ -3,11 +3,103 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
     <!-- TODO: Include Google Fonts file here -->
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <header>
+        <div class="heading">
+            ScriBBler
+            <div class="sub-heading">
+                Explore, Imagine, Create
+            </div>
+        </div>
+        <div class="access-btns">
+            <form action="">
+                <button id="signup-btn" class="access-btn" type="submit">Sign up</button>
+                <button id="signin-btn" class="access-btn">Sign in</button>
+            </form>
+        </div>
+    </header>
+    
+    <div class="post-btns">
+        <button class="post-btn" id="showPosts-btn">All Posts</button>
+        <button class="post-btn" id="createPosts-btn">Create Post</button>
+    </div>
+
+    <dialog id="signUpModal" class="modal">
+        <div class="modal-content">
+            <form id="getStartedForm">
+                <div class="modal-header">
+                    <h2 class="modal-title">Get Started</h2>
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+                </div>
+                <hr class="separator">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+    
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
+    
+                <button type="submit" class="form-submit-btn">Sign up</button>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog id="signInModal" class="modal">
+        <div class="signin-modal-content">
+            <form id="welcomeBackForm">
+                <div class="modal-header">
+                    <h2 class="modal-title">Welcome Back</h2>
+                    <span class="close-btn" id="closeSigninModalBtn">&times;</span>
+                </div>
+                <hr class="separator">
+    
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+    
+                <button type="submit" class="form-submit-btn">Sign in</button>
+                 
+                <div class="signup-link">
+                    <p>Not a member? <a href="#" id="showSignUpModalLink">Sign up</a></p>
+                </div>
+            </form>
+            
+        </div>
+    </dialog>
+
+    <dialog id="createPostModal" class="modal">
+        <div class="modal-content" id="create-post-modalcontent">
+            <form id="createPostForm">
+                <div class="modal-header">
+                    <h2 class="modal-title">Pen Your Post</h2>
+                    <span class="close-btn" id="closeCreatePostModalBtn">&times;</span>
+                </div>
+                <hr class="separator">
+                <label for="postTitle">Title</label>
+                <input type="text" id="postTitle" name="postTitle" required placeholder="Enter title of your post">
+    
+                <label for="postContents">Content</label>
+                <textarea id="postContents" name="postContents" required placeholder="Enter the contents of your post"></textarea>
+    
+                <button type="submit" class="post-submit-btn">Create</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="js\index.js"></script>
 </body>
 
 </html>
