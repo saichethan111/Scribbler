@@ -8,7 +8,7 @@ body {
     font-family: 'Montez', cursive;
     color: rgb(17, 17, 173);
     font-size: 30px;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
 }
 .sub-heading{
     font-family: 'Ubuntu Mono', cursive;
@@ -78,40 +78,43 @@ body {
 
 /* Modal styles */
 .modal {
-    display: none;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 12%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.modal-yes-btn,
-.modal-no-btn {
-    margin: 10px;
+#modal-yes-btn,
+#modal-no-btn {
+    margin-top: 10px;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0px;
     cursor: pointer;
 }
 
-.modal-yes-btn {
+#modal-yes-btn {
     background: #4caf50; /* Green color */
     color: #fff;
 }
 
-.modal-no-btn {
-    background: #ccc;
+#modal-no-btn {
+    margin-left: 60%;
+    background: #df0b0b;
 }
 
 .post-header {
@@ -145,4 +148,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.post-story{
+    display: flex;
+    flex-direction: column;
+}
+.post-heading{
+    color: gray;
 }
